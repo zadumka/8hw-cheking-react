@@ -13,7 +13,7 @@ export default function Contacts() {
 
   useEffect(() => {
     dispatch(fetchContacts());
-  }, [dispatch]);
+  }, []);
 
   return (
     <>
