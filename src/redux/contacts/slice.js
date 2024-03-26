@@ -42,7 +42,7 @@ const contactsSlice = createSlice({
         state.items.splice(index, 1);
       })
       .addCase(logOut.fulfilled, state => {
-        state.items = [];
+        state.items = [true];
         state.error = null;
         state.loading = false;
       });
